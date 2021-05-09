@@ -1,4 +1,5 @@
-const loadPage = () => {
+const homeTabLoad = () => {
+    
     const content = document.getElementById('content');
 
     // Add navbar
@@ -8,12 +9,10 @@ const loadPage = () => {
 
     // Left side of navbar
     const homeButton = document.createElement('button');
-    homeButton.setAttribute('id', 'home-tab');
     homeButton.textContent = 'Home';
     navbar.appendChild(homeButton);
 
     const menuButton = document.createElement('button');
-    menuButton.setAttribute('id', 'menu-tab');
     menuButton.textContent = 'Menu';
     navbar.appendChild(menuButton);
 
@@ -34,12 +33,10 @@ const loadPage = () => {
 
     // Right side of navbar
     const contactButton = document.createElement('button');
-    contactButton.setAttribute('id', 'contact-tab');
     contactButton.textContent = 'Contact us';
     navbar.appendChild(contactButton);
 
     const aboutButton = document.createElement('button');
-    aboutButton.setAttribute('id', 'about-tab');
     aboutButton.textContent = 'About';
     navbar.appendChild(aboutButton);
 
@@ -55,4 +52,4 @@ const loadPage = () => {
 
 }
 
-export default loadPage
+export default homeTabLoad

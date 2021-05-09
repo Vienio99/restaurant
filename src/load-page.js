@@ -1,0 +1,30 @@
+const loadPage = () => {
+    const content = document.getElementById('content');
+
+    // Add navbar
+    const navbar = document.createElement('div');
+    content.appendChild(navbar);
+    navbar.classList.add('navbar')
+
+    const title = document.createElement('h1');
+    title.setAttribute('id', 'title');
+    title.textContent = 'Fat Thai';
+    navbar.appendChild(title);
+
+    const subTitle = document.createElement('p');
+    subTitle.setAttribute('id', 'sub-title');
+    subTitle.textContent = 'Ketogenic Thai cuisine';
+    navbar.appendChild(subTitle);
+
+    const description = document.createElement('div');
+    description.setAttribute('id', 'description');
+    description.textContent = "Fat Thai, located in the heart of Kailua-Kona, is a family owned and operated restaurant. Fat Thai is owned and operated by Chariya and her three daughters. Preserving recipes and traditions of the past for future generations, Fat Thai is a local favorite."
+    content.appendChild(description);
+
+    const img = document.createElement('img');
+    img.src = '../img/food.png';
+    content.appendChild(img);
+
+}
+
+export default loadPage

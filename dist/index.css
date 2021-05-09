@@ -24,13 +24,27 @@ body {
 .navbar {
     text-align: center;
     margin-top: 5%;
+    margin-bottom: 7%;
 }
 
-#name {
+#title {
     margin-bottom: -1%
 }
 
-#desc {
+#sub-title {
     color: rgb(39, 143, 39);
 }
 
+#description {
+    font-size: 1.5vw;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}

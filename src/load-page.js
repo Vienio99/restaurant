@@ -1,10 +1,6 @@
 const loadPage = () => {
-    const content = document.getElementById('content');
-
-    // Add navbar
-    const navbar = document.createElement('div');
-    content.appendChild(navbar);
-    navbar.classList.add('navbar')
+    
+    const navbar = document.getElementById('navbar');
 
     // Left side of navbar
     const homeButton = document.createElement('button');
@@ -42,16 +38,6 @@ const loadPage = () => {
     aboutButton.setAttribute('id', 'about-tab');
     aboutButton.textContent = 'About';
     navbar.appendChild(aboutButton);
-
-    // Description & image
-    const description = document.createElement('div');
-    description.setAttribute('id', 'description');
-    description.textContent = "Fat Thai, located in the heart of Kailua-Kona, is a family owned and operated restaurant. Fat Thai is owned and operated by Chariya and her three daughters. Preserving recipes and traditions of the past for future generations, Fat Thai is a local favorite."
-    content.appendChild(description);
-
-    const img = document.createElement('img');
-    img.src = '../img/food.png';
-    content.appendChild(img);
 
 }
 

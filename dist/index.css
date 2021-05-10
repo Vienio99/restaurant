@@ -11,7 +11,7 @@ body {
     flex-direction: column;
 }
 
-.content {
+body {
     flex: 1 0 auto;
 }
 
@@ -21,7 +21,7 @@ body {
     margin-top: auto;
 }
 
-.navbar {
+#navbar {
     text-align: center;
     margin-top: 5%;
     margin-bottom: 7%;
@@ -29,14 +29,14 @@ body {
     justify-content: center;
 }
 
-.navbar button {
+#navbar button {
     background: none;
     border: none;
     color: white;
     font-size: 120%;
 }
 
-.navbar button:hover {
+#navbar button:hover {
     cursor: pointer;
 }
 
@@ -61,4 +61,29 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 20%;
+}
+
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.meal {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.2vw;
+    flex: 1 0 50%;
+    margin-bottom: 6%;
+}
+
+.meal h3, p {
+    margin-bottom: -1.5%;
+}
+
+.meal .ingredients {
+    margin: 0 auto;
+    width: 50%;
+}
+.meal .ingredients {
+    word-wrap: break-word;
 }

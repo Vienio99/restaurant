@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/about-tab.js":
+/*!**************************!*\
+  !*** ./src/about-tab.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst aboutTabLoad = () => {\n    \n    const content = document.getElementById('content');\n\n    const header = document.createElement('h2');\n    header.textContent = \"About us\"\n    content.appendChild(header);\n\n    const address = document.createElement('div');\n    address.setAttribute('id', 'address');\n    address.textContent = \"Address: 1507 Garrett Street, \\nGrand Rapids, Michigan, USA\"\n    content.appendChild(address);\n\n    const time = document.createElement('div');\n    time.setAttribute('id', 'time');\n    time.textContent = \"Opening hours: Mon-Thurs: 8am-8pm \\nFri-Sun: 8am-11pm\";\n    content.appendChild(time);\n\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (aboutTabLoad);\n\n//# sourceURL=webpack://restaurant/./src/about-tab.js?");
+
+/***/ }),
+
 /***/ "./src/contact-tab.js":
 /*!****************************!*\
   !*** ./src/contact-tab.js ***!
@@ -36,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _load_page_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./load-page.js */ \"./src/load-page.js\");\n/* harmony import */ var _home_tab_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home-tab.js */ \"./src/home-tab.js\");\n/* harmony import */ var _menu_tab_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu-tab.js */ \"./src/menu-tab.js\");\n/* harmony import */ var _contact_tab_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact-tab.js */ \"./src/contact-tab.js\");\n\n\n\n\n\n\n\n(0,_load_page_js__WEBPACK_IMPORTED_MODULE_0__.default)();\n(0,_home_tab_js__WEBPACK_IMPORTED_MODULE_1__.default)();\n\ndocument.addEventListener('click', (e) => {\n\n    const content = document.getElementById('content');\n\n    if (e.target) {\n        if (e.target.id == 'home-tab') {\n            removeContent(content);\n            (0,_home_tab_js__WEBPACK_IMPORTED_MODULE_1__.default)();\n        };\n\n        if (e.target.id == 'menu-tab') {\n            removeContent(content);\n            (0,_menu_tab_js__WEBPACK_IMPORTED_MODULE_2__.default)();\n        }\n\n        if (e.target.id == 'contact-tab') {\n            removeContent(content);\n            (0,_contact_tab_js__WEBPACK_IMPORTED_MODULE_3__.default)();\n        }\n        \n    }\n});\n\nfunction removeContent(content) {\n    while (content.firstChild) {\n        content.removeChild(content.firstChild)\n    }\n\n};\n\n\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _load_page_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./load-page.js */ \"./src/load-page.js\");\n/* harmony import */ var _home_tab_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home-tab.js */ \"./src/home-tab.js\");\n/* harmony import */ var _menu_tab_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu-tab.js */ \"./src/menu-tab.js\");\n/* harmony import */ var _contact_tab_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact-tab.js */ \"./src/contact-tab.js\");\n/* harmony import */ var _about_tab_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./about-tab.js */ \"./src/about-tab.js\");\n\n\n\n\n\n\n\n\n(0,_load_page_js__WEBPACK_IMPORTED_MODULE_0__.default)();\n(0,_home_tab_js__WEBPACK_IMPORTED_MODULE_1__.default)();\n\ndocument.addEventListener('click', (e) => {\n\n    const content = document.getElementById('content');\n\n    if (e.target) {\n        if (e.target.id == 'home-tab') {\n            removeContent(content);\n            (0,_home_tab_js__WEBPACK_IMPORTED_MODULE_1__.default)();\n        };\n\n        if (e.target.id == 'menu-tab') {\n            removeContent(content);\n            (0,_menu_tab_js__WEBPACK_IMPORTED_MODULE_2__.default)();\n        }\n\n        if (e.target.id == 'contact-tab') {\n            removeContent(content);\n            (0,_contact_tab_js__WEBPACK_IMPORTED_MODULE_3__.default)();\n        }\n\n        if (e.target.id == 'about-tab') {\n            removeContent(content);\n            (0,_about_tab_js__WEBPACK_IMPORTED_MODULE_4__.default)();\n        }\n        \n    }\n});\n\nfunction removeContent(content) {\n    while (content.firstChild) {\n        content.removeChild(content.firstChild)\n    }\n\n};\n\n\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
 
 /***/ }),
 

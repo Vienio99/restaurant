@@ -126,3 +126,7 @@ img {
 #description {
     margin-top: 5%;
 }
+
+#time {
+    white-space:pre-wrap;
+}

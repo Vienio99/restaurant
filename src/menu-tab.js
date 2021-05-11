@@ -1,11 +1,16 @@
 const menuTabLoad = () => {
     
     const content = document.getElementById('content');
+    
 
+    const header = document.createElement('h2');
+    header.textContent = "Menu"
+    content.appendChild(header);
+    
     const menuList = document.createElement('div');
     menuList.setAttribute('class', 'menu-list')
     content.appendChild(menuList);
-    
+
 
     for (let i = 1; i <= 6; i++) {
         const meal = document.createElement('div');
@@ -16,7 +21,7 @@ const menuTabLoad = () => {
 
         const price = document.createElement('p');
         meal.appendChild(price);
-        price.textContent = '11$';
+        price.textContent = '10$';
 
         const img = document.createElement('img');
         meal.appendChild(img);
@@ -53,11 +58,6 @@ const menuTabLoad = () => {
     const sixthMeal = document.getElementById('6');
     sixthMeal.firstChild.textContent = 'Sriracha Ho Fun Noodles';
     sixthMeal.lastChild.textContent = 'wok-fried mushroom, red pepper, baby spinach and flat rice noodles seasoned with sweet chilli, soy and ginger sauce'
-
-
-    img.src = '../img/food.png';
-    content.appendChild(img);
-
 
 }
 

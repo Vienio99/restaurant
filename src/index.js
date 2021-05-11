@@ -1,6 +1,9 @@
 import loadPage from './load-page.js';
 import homeTabLoad from './home-tab.js';
 import menuTabLoad from './menu-tab.js';
+import contactTabLoad from './contact-tab.js';
+
+
 
 loadPage();
 homeTabLoad();
@@ -19,6 +22,12 @@ document.addEventListener('click', (e) => {
             removeContent(content);
             menuTabLoad();
         }
+
+        if (e.target.id == 'contact-tab') {
+            removeContent(content);
+            contactTabLoad();
+        }
+        
     }
 });
 

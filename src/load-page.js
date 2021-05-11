@@ -5,11 +5,13 @@ const loadPage = () => {
     // Left side of navbar
     const homeButton = document.createElement('button');
     homeButton.setAttribute('id', 'home-tab');
+    homeButton.setAttribute('class', 'middle');
     homeButton.textContent = 'Home';
     navbar.appendChild(homeButton);
 
     const menuButton = document.createElement('button');
     menuButton.setAttribute('id', 'menu-tab');
+    menuButton.setAttribute('class', 'middle');
     menuButton.textContent = 'Menu';
     navbar.appendChild(menuButton);
 
@@ -31,11 +33,13 @@ const loadPage = () => {
     // Right side of navbar
     const contactButton = document.createElement('button');
     contactButton.setAttribute('id', 'contact-tab');
-    contactButton.textContent = 'Contact us';
+    contactButton.setAttribute('class', 'middle');
+    contactButton.textContent = 'Contact';
     navbar.appendChild(contactButton);
 
     const aboutButton = document.createElement('button');
     aboutButton.setAttribute('id', 'about-tab');
+    aboutButton.setAttribute('class', 'middle');
     aboutButton.textContent = 'About';
     navbar.appendChild(aboutButton);
 

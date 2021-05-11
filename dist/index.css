@@ -15,16 +15,12 @@ body {
     flex: 1 0 auto;
 }
 
-.footer {
-    flex-shrink: 0;
-    text-align: center;
-    margin-top: auto;
-}
+
 
 #navbar {
     text-align: center;
-    margin-top: 5%;
-    margin-bottom: 7%;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
     display: flex;
     justify-content: center;
 }
@@ -34,11 +30,33 @@ body {
     border: none;
     color: white;
     font-size: 120%;
+    position: relative;
 }
 
 #navbar button:hover {
     cursor: pointer;
 }
+
+#navbar button.middle:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+#navbar button.middle:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+    cursor: pointer;
+}
+
 
 
 #title {
@@ -53,19 +71,20 @@ body {
     font-size: 1.5vw;
     width: 50%;
     margin: 0 auto;
-    text-align: center;
 }
 
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
+    width: 40%;
 }
 
 .menu-list {
     display: flex;
     flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .meal {
@@ -73,7 +92,7 @@ img {
     margin: 0 auto;
     font-size: 1.2vw;
     flex: 1 0 50%;
-    margin-bottom: 6%;
+    margin-bottom: 4%;
 }
 
 .meal h3, p {
@@ -86,4 +105,24 @@ img {
 }
 .meal .ingredients {
     word-wrap: break-word;
+}
+
+#logo {
+    width: 4%;
+    margin-left: 47.5%;
+}
+
+#content {
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.footer {
+    flex-shrink: 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+#description {
+    margin-top: 5%;
 }
